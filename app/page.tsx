@@ -14,33 +14,29 @@ export default function PortfolioNavbar() {
           {/* Desktop Navigation */}
           <div className="hidden items-center gap-8 md:flex">
             <a
+              href="#about"
+              className="text-sm font-medium text-gray-300 transition hover:text-white"
+            >
+              About
+            </a>
+            <a
               href="#projects"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
             >
               Projects
             </a>
-
-            <a
-              href="#projects"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              skills
-            </a>
-
             <a
               href="#experience"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
             >
               Experience
             </a>
-
             <a
-              href="#about"
+              href="#projects"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
             >
-              About
+              skills
             </a>
-
             <a
               href="#contact"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
@@ -125,13 +121,23 @@ export default function PortfolioNavbar() {
             </div>
           </div>
         </section>
-
+        
+        <section id="About" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+          <h2 className="text-4xl font-bold">About</h2>
+        </section>
         <section id="projects" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Projects</h2>
+        </section>
+        <section id="experience" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+          <h2 className="text-4xl font-bold">Experience</h2>
+        </section>
+        <section id="skills" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+          <h2 className="text-4xl font-bold">Skills</h2>
         </section>
         <section id="contact" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Contact</h2>
         </section>
+        <footer></footer>
     </div>
   );
 }
