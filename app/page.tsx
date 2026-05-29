@@ -1,4 +1,9 @@
+"use client";
+
+import { useState } from "react";
+
 export default function PortfolioNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
@@ -7,7 +12,7 @@ export default function PortfolioNavbar() {
           <a
             href="#home"
             className="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
-          >
+            >
             Rajan kuwar<span className="text-gray-400">.</span>
           </a>
 
@@ -32,7 +37,7 @@ export default function PortfolioNavbar() {
               Experience
             </a>
             <a
-              href="#projects"
+              href="#skills"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
             >
               skills
@@ -62,8 +67,56 @@ export default function PortfolioNavbar() {
             >
               Resume
             </a>
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-2xl text-white md:hidden"
+              >
+              ☰
+            </button>
           </div>
         </nav>
+        {isOpen && (
+    <div className="border-t border-white/10 bg-black md:hidden">
+      <div className="flex flex-col px-6 py-4">
+        <a
+          href="#about"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          About
+        </a>
+        <a
+          href="#projects"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          Projects
+        </a>
+
+        <a
+          href="#experience"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          Experience
+        </a>
+        <a
+          href="#skills"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          Skills
+        </a>
+        <a
+          href="#contact"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+)}
       </header>
 
       {/* Hero Section */}
