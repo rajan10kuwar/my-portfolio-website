@@ -8,7 +8,7 @@ export default function PortfolioNavbar() {
             href="#home"
             className="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
           >
-            R<span className="text-gray-400">.</span>
+            Rajan kuwar<span className="text-gray-400">.</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -137,7 +137,38 @@ export default function PortfolioNavbar() {
         <section id="contact" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Contact</h2>
         </section>
-        <footer></footer>
+        <footer className="border-t border-white/10 py-8">
+  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
+    <p>© 2026 Rajan Kuwar. All rights reserved.</p>
+
+    <div className="flex items-center gap-4">
+      <a
+        href="https://github.com/rajan10kuwar"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        GitHub
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/rajan-kuwar-8356982b2"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="transition hover:text-white"
+      >
+        LinkedIn
+      </a>
+
+      <a
+        href="mailto:rajan10kuwar@gmail.com.com"
+        className="transition hover:text-white"
+      >
+        Email
+      </a>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
