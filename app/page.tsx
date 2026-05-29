@@ -470,8 +470,90 @@ export default function PortfolioNavbar() {
             </div>
           </div>
         </section>
+
         <section id="contact" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
-          <h2 className="text-4xl font-bold">Contact</h2>
+          {/* Heading */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              Contact
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              Let’s Connect
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              I’m currently seeking software engineering opportunities
+              including frontend, backend, and full-stack roles.
+              Feel free to reach out for collaboration, networking,
+              or potential opportunities.
+            </p>
+          </div>
+
+          {/* Contact Cards */}
+          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+            {/* Email */}
+            <a
+              href="mailto:rajan10kuwar@gmail.com.com"
+              className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+            >
+              <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                Email
+              </p>
+
+              <h3 className="mt-4 text-xl font-semibold">
+                rajan10kuwar@gmail.com
+              </h3>
+
+              <p className="mt-4 text-gray-400">
+                Best way to reach me directly regarding opportunities
+                or collaboration.
+              </p>
+            </a>
+
+            {/* GitHub */}
+            <a
+              href="https://github.com/rajan10kuwar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+            >
+              <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                GitHub
+              </p>
+
+              <h3 className="mt-4 text-xl font-semibold">
+                https://github.com/rajan10kuwar
+              </h3>
+
+              <p className="mt-4 text-gray-400">
+                Explore projects, repositories, and ongoing development
+                work.
+              </p>
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/rajan-kuwar-8356982b2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+            >
+              <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                LinkedIn
+              </p>
+
+              <h3 className="mt-4 text-xl font-semibold">
+                https://www.linkedin.com/in/rajan-kuwar-8356982b2
+              </h3>
+
+              <p className="mt-4 text-gray-400">
+                Connect professionally and stay updated on my experience
+                and technical growth.
+              </p>
+            </a>
+          </div>
         </section>
         <footer className="border-t border-white/10 py-8">
   <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
