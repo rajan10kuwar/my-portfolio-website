@@ -177,6 +177,29 @@ export default function PortfolioNavbar() {
         
         <section id="About" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">About</h2>
+          <div className="mt-10 max-w-3xl">
+          <p className="text-lg leading-8 text-gray-400">
+            I'm a Computer Science graduate focused on software engineering
+            roles including frontend, backend, and full-stack development.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-400">
+            I enjoy building responsive, scalable, and user-focused web
+            applications while continuously learning modern technologies
+            and development practices.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-400">
+            My current interests include React, Next.js, TypeScript,
+            backend architecture, and performance-focused application
+            design.
+          </p>
+
+          <p className="mt-6 text-lg leading-8 text-gray-400">
+            Currently seeking opportunities where I can contribute,
+            grow as an engineer, and work on impactful software products.
+          </p>
+        </div>
         </section>
         <section id="projects" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Projects</h2>
