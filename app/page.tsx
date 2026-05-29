@@ -175,40 +175,149 @@ export default function PortfolioNavbar() {
           </div>
         </section>
         
-        <section id="About" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="about" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">About</h2>
           <div className="mt-10 max-w-3xl">
-          <p className="text-lg leading-8 text-gray-400">
-            I'm a Computer Science graduate focused on software engineering
-            roles including frontend, backend, and full-stack development.
-          </p>
+            <p className="text-lg leading-8 text-gray-400">
+              I'm a Computer Science graduate focused on software engineering
+              roles including frontend, backend, and full-stack development.
+            </p>
 
-          <p className="mt-6 text-lg leading-8 text-gray-400">
-            I enjoy building responsive, scalable, and user-focused web
-            applications while continuously learning modern technologies
-            and development practices.
-          </p>
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              I enjoy building responsive, scalable, and user-focused web
+              applications while continuously learning modern technologies
+              and development practices.
+            </p>
 
-          <p className="mt-6 text-lg leading-8 text-gray-400">
-            My current interests include React, Next.js, TypeScript,
-            backend architecture, and performance-focused application
-            design.
-          </p>
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              My current interests include React, Next.js, TypeScript,
+              backend architecture, and performance-focused application
+              design.
+            </p>
 
-          <p className="mt-6 text-lg leading-8 text-gray-400">
-            Currently seeking opportunities where I can contribute,
-            grow as an engineer, and work on impactful software products.
-          </p>
-        </div>
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              Currently seeking opportunities where I can contribute,
+              grow as an engineer, and work on impactful software products.
+            </p>
+          </div>
         </section>
+
         <section id="projects" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Projects</h2>
         </section>
         <section id="experience" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Experience</h2>
         </section>
+
         <section id="skills" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
-          <h2 className="text-4xl font-bold">Skills</h2>
+          {/* Section Heading */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              Technical Skills
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              Technologies & Tools
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              A growing toolkit focused on modern software engineering,
+              full-stack development, and scalable application design.
+            </p>
+          </div>
+
+          {/* Skills Grid */}
+          <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {/* Languages */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">Languages</h3>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {[
+                  "Python",
+                  "JavaScript",
+                  "Java",
+                  "C++",
+                  "SQL",
+                  "HTML",
+                  "CSS",
+                ].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300 transition hover:border-white/20 hover:text-white"
+                >
+                  {skill}
+                </span>
+               ))}
+              </div>
+            </div>
+
+            {/* Frontend */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">Frontend</h3>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {[
+                  "React",
+                  "Next.js",
+                  "TypeScript",
+                  "Tailwind CSS",
+                ].map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300 transition hover:border-white/20 hover:text-white"
+                >
+                  {skill}
+                </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">Backend</h3>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {[
+                  "Flask",
+                  "REST APIs",
+                  "Database Management",
+                  "Authentication",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300 transition hover:border-white/20 hover:text-white"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">
+                Tools & Workflow
+              </h3>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {[
+                  "Git",
+                  "GitHub",
+                  "Jira",
+                  "Agile (Scrum)",
+                  "VS Code",
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300 transition hover:border-white/20 hover:text-white"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </section>
         <section id="contact" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Contact</h2>
