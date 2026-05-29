@@ -206,7 +206,158 @@ export default function PortfolioNavbar() {
           <h2 className="text-4xl font-bold">Projects</h2>
         </section>
         <section id="experience" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
-          <h2 className="text-4xl font-bold">Experience</h2>
+          {/* Heading */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              Experience
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              Professional Experience
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              Hands-on experience across software engineering,
+              cybersecurity, backend systems, and technical instruction.
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="mt-16 border-l border-white/10 pl-8 space-y-12">
+
+            {/* Internship */}
+            <div className="relative">
+              <div className="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-white"></div>
+
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      Technical/Cybersecurity Intern
+                    </h3>
+
+                    <p className="mt-2 text-gray-400">
+                      Technuf • Rockville, MD
+                    </p>
+                  </div>
+
+                  <p className="text-sm text-gray-500">
+                    July 2025 – Aug 2025
+                  </p>
+                </div>
+
+                <ul className="mt-6 space-y-4 text-gray-300">
+                  <li>
+                    Developed a bi-directional MCP Server for Wazuh,
+                    automating alert forwarding to Splunk and
+                    Elasticsearch using async REST/Webhook connectors.
+                  </li>
+
+                  <li>
+                    Built a FastAPI-based inbound adapter integrating
+                    third-party CTI feeds into Wazuh in real time with
+                    sub-2 second latency.
+                  </li>
+
+                  <li>
+                    Engineered outbound connectors with retry logic
+                    ensuring reliable schema transformation across
+                    multiple SIEM platforms.
+                  </li>
+
+                  <li>
+                    Wrote integration tests using Pytest and authored
+                    technical documentation covering APIs, deployment,
+                    and architecture workflows.
+                  </li>
+                </ul>
+
+                {/* Tech Stack */}
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {[
+                    "Python",
+                    "FastAPI",
+                    "Pytest",
+                    "REST APIs",
+                    "Splunk",
+                    "Elasticsearch",
+                    "Wazuh",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Teaching Assistant */}
+            <div className="relative">
+              <div className="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-white"></div>
+
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+                <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                  <div>
+                    <h3 className="text-2xl font-semibold">
+                      Teaching Assistant — Social & Ethical Issues in IT
+                    </h3>
+
+                    <p className="mt-2 text-gray-400">
+                      UMBC • Catonsville, MD
+                    </p>
+                  </div>
+
+                  <p className="text-sm text-gray-500">
+                    Aug 2025 – Dec 2025
+                  </p>
+                </div>
+
+                <ul className="mt-6 space-y-4 text-gray-300">
+                  <li>
+                    Led weekly discussion sections for a 60-student
+                    course focused on cybersecurity ethics, digital
+                    privacy, and intellectual property.
+                  </li>
+
+                  <li>
+                    Managed grading and academic support for
+                    approximately 30 students using Blackboard.
+                  </li>
+
+                  <li>
+                    Delivered detailed feedback helping students improve
+                    research quality and assignment performance.
+                  </li>
+
+                  <li>
+                    Collaborated with instructors and co-TAs to maintain
+                    consistent grading standards across evaluations.
+                  </li>
+                </ul>
+
+                {/* Skills */}
+                <div className="mt-8 flex flex-wrap gap-3">
+                  {[
+                    "Leadership",
+                    "Communication",
+                    "Research",
+                    "Cybersecurity Ethics",
+                    "Blackboard",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="skills" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
