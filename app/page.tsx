@@ -37,10 +37,16 @@ export default function PortfolioNavbar() {
               Experience
             </a>
             <a
+              href="#education"
+              className="text-sm font-medium text-gray-300 transition hover:text-white"
+            >
+              Education
+            </a>
+            <a
               href="#skills"
               className="text-sm font-medium text-gray-300 transition hover:text-white"
             >
-              skills
+              Skills
             </a>
             <a
               href="#contact"
@@ -99,6 +105,13 @@ export default function PortfolioNavbar() {
           className="py-3 text-gray-300 transition hover:text-white"
         >
           Experience
+        </a>
+        <a
+          href="#education"
+          onClick={() => setIsOpen(false)}
+          className="py-3 text-gray-300 transition hover:text-white"
+        >
+          Education
         </a>
         <a
           href="#skills"
@@ -358,6 +371,10 @@ export default function PortfolioNavbar() {
               </div>
             </div>
           </div>
+        </section>
+
+        <section id="education" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+          <h2 className="text-4xl font-bold">Education</h2>
         </section>
 
         <section id="skills" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
