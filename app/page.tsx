@@ -68,7 +68,7 @@ export default function PortfolioNavbar() {
             </a>
 
             <a
-              href="/RK_Resume.pdf\" target="_blank\"
+              href="/RK_Resume.pdf" target="_blank"
               className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90"
             >
               Resume
@@ -188,9 +188,26 @@ export default function PortfolioNavbar() {
           </div>
         </section>
         
-        <section id="about" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
-          <h2 className="text-4xl font-bold">About</h2>
-          <div className="mt-10 max-w-3xl">
+        <section id="about" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24"
+        >
+          {/* Section Heading */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              About
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              About Me
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              Learn more about my background, interests, and goals as a software
+              engineer.
+            </p>
+          </div>
+
+          {/* Content */}
+          <div className="mt-16 max-w-3xl">
             <p className="text-lg leading-8 text-gray-400">
               I'm a Computer Science graduate focused on software engineering
               roles including frontend, backend, and full-stack development.
@@ -215,10 +232,10 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="projects" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="projects" className=" scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
           <h2 className="text-4xl font-bold">Projects</h2>
         </section>
-        <section id="experience" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="experience" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -373,11 +390,26 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="education" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
-          <h2 className="text-4xl font-bold">Education</h2>
+        <section id="education" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24"
+        >
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              Education
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              Academic Background
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              Computer Science education focused on software engineering,
+              systems, databases, cybersecurity, and modern application development.
+            </p>
+          </div>
+
         </section>
 
-        <section id="skills" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="skills" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
           {/* Section Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -488,7 +520,7 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="contact" className="mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="contact" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -512,7 +544,7 @@ export default function PortfolioNavbar() {
 
             {/* Email */}
             <a
-              href="mailto:rajan10kuwar@gmail.com.com"
+              href="mailto:rajan10kuwar@gmail.com"
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
             >
               <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
