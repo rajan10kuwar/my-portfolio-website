@@ -135,7 +135,7 @@ export default function PortfolioNavbar() {
       {/* Hero Section */}
         <section
           id="home"
-          className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-6 py-20"
+          className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-6 py-16"
         >
           <div className="max-w-3xl">
             <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -188,7 +188,7 @@ export default function PortfolioNavbar() {
           </div>
         </section>
         
-        <section id="about" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24"
+        <section id="about" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
         >
           {/* Section Heading */}
           <div className="max-w-3xl">
@@ -232,10 +232,10 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="projects" className=" scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="projects" className=" scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
           <h2 className="text-4xl font-bold">Projects</h2>
         </section>
-        <section id="experience" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="experience" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -390,26 +390,127 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="education" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24"
+        <section id="education" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
         >
+          {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
               Education
             </p>
 
-            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+            <h2 className="mt-2 text-4xl font-bold tracking-tight md:text-5xl">
               Academic Background
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-gray-400">
-              Computer Science education focused on software engineering,
-              systems, databases, cybersecurity, and modern application development.
+            <p className="mt-2 text-lg leading-8 text-gray-400">
+              Educational foundation in computer science, software engineering,
+              systems, databases, cybersecurity, and modern application
+              development.
             </p>
           </div>
 
+          {/* Education Cards */}
+          <div className="mt-8 space-y-8">
+
+            {/* UMBC */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+
+                <div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                    Jan 2024 – Dec 2025
+                  </p>
+
+                  <h3 className="mt-3 text-2xl font-semibold">
+                    Bachelor of Science in Computer Science
+                  </h3>
+
+                  <p className="mt-2 text-gray-400">
+                    University of Maryland, Baltimore County (UMBC)
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 px-5 py-4 text-center">
+                  <p className="text-xs uppercase tracking-wider text-gray-500">
+                    GPA
+                  </p>
+
+                  <p className="mt-1 text-xl font-semibold">
+                    3.90 / 4.0
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                {[
+                  "Software Engineering",
+                  "Operating Systems",
+                  "Database Systems",
+                  "Artificial Intelligence",
+                  "Machine Learning",
+                  "Computer Security",
+                ].map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* CCBC */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+
+                <div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-gray-500">
+                    Aug 2020 – May 2023
+                  </p>
+
+                  <h3 className="mt-3 text-2xl font-semibold">
+                    Associate of Science
+                  </h3>
+
+                  <p className="mt-2 text-gray-400">
+                    Community College of Baltimore County (CCBC)
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-white/10 px-5 py-4 text-center">
+                  <p className="text-xs uppercase tracking-wider text-gray-500">
+                    GPA
+                  </p>
+
+                  <p className="mt-1 text-xl font-semibold">
+                    3.86 / 4.0
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                {[
+                  "Programming Fundamentals",
+                  "Data Structures",
+                  "Object-Oriented Programming",
+                  "Mathematics",
+                  "Problem Solving",
+                ].map((area) => (
+                  <span
+                    key={area}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                  >
+                    {area}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </section>
 
-        <section id="skills" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="skills" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
           {/* Section Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -520,7 +621,7 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="contact" className="scroll-mt-8 mx-auto min-h-screen max-w-7xl px-6 py-24">
+        <section id="contact" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
