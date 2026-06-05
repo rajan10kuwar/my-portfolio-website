@@ -13,7 +13,7 @@ export default function PortfolioNavbar() {
             href="#home"
             className="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
             >
-            Rajan kuwar<span className="text-gray-400">.</span>
+              Rajan kuwar<span className="text-gray-400">.</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -76,119 +76,122 @@ export default function PortfolioNavbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-2xl text-white md:hidden"
-              >
+            >
               ☰
             </button>
           </div>
         </nav>
         {isOpen && (
-    <div className="border-t border-white/10 bg-black md:hidden">
-      <div className="flex flex-col px-6 py-4">
-        <a
-          href="#about"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          About
-        </a>
-        <a
-          href="#projects"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          Projects
-        </a>
+          <div className="border-t border-white/10 bg-black md:hidden">
+            <div className="flex flex-col px-6 py-4">
+              <a
+                href="#about"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                About
+              </a>
+              <a
+                href="#projects"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                Projects
+              </a>
 
-        <a
-          href="#experience"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          Experience
-        </a>
-        <a
-          href="#education"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          Education
-        </a>
-        <a
-          href="#skills"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          Skills
-        </a>
-        <a
-          href="#contact"
-          onClick={() => setIsOpen(false)}
-          className="py-3 text-gray-300 transition hover:text-white"
-        >
-          Contact
-        </a>
-      </div>
-    </div>
-)}
+              <a
+                href="#experience"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                Experience
+              </a>
+              <a
+                href="#education"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                Education
+              </a>
+              <a
+                href="#skills"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                Skills
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setIsOpen(false)}
+                className="py-3 text-gray-300 transition hover:text-white"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
+        )}
+
       </header>
 
       {/* Hero Section */}
-        <section
-          id="home"
-          className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-6 py-16"
-        >
-          <div className="max-w-3xl">
-            <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
-              Computer Science Graduate
-            </p>
+      <section
+        id="home"
+        className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-6 py-16"
+      >
+        <div className="max-w-3xl">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+            Computer Science Graduate
+          </p>
 
-            <h1 className="text-5xl font-bold leading-tight tracking-tight md:text-7xl">
-              Full-Stack Developer Building Modern Web Applications.
-            </h1>
+          <h1 className="text-5xl font-bold leading-tight tracking-tight md:text-7xl">
+            Full-Stack Developer Building Modern Web Applications.
+          </h1>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400 md:text-xl">
-              I build responsive, scalable, and production-ready applications
-              using React, TypeScript, Next.js, and modern backend technologies.
-            </p>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400 md:text-xl">
+            I build responsive, scalable, and production-ready applications
+            using React, TypeScript, Next.js, and modern backend technologies.
+          </p>
 
-            {/* CTA Buttons */}
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href="#projects"
-                className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:opacity-90"
-              >
-                View Projects
-              </a>
+          {/* CTA Buttons */}
+          <div className="mt-10 flex flex-wrap items-center gap-4">
+            <a
+              href="#projects"
+              className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:opacity-90"
+            >
+              View Projects
+            </a>
 
-              <a
-                href="#contact"
-                className="rounded-2xl border border-white/10 px-6 py-3 text-sm font-medium text-gray-300 transition hover:border-white/20 hover:text-white"
-              >
-                Contact Me
-              </a>
-            </div>
-
-            {/* Tech Stack */}
-            <div className="mt-12 flex flex-wrap gap-3">
-              {[
-                'Next.js',
-                'TypeScript',
-                'React',
-                'Tailwind CSS',
-                'PostgreSQL',
-              ].map((tech) => (
-                <span
-                  key={tech}
-                  className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300"
-                >
-                  {tech}
-                </span>
-              ))}
-            </div>
+            <a
+              href="#contact"
+              className="rounded-2xl border border-white/10 px-6 py-3 text-sm font-medium text-gray-300 transition hover:border-white/20 hover:text-white"
+            >
+              Contact Me
+            </a>
           </div>
-        </section>
+
+          {/* Tech Stack */}
+          <div className="mt-12 flex flex-wrap gap-3">
+            {[
+              'Next.js',
+              'TypeScript',
+              'React',
+              'Tailwind CSS',
+              'PostgreSQL',
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-300"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
         
-        <section id="about" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        <section 
+          id="about"
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
         >
           {/* Section Heading */}
           <div className="max-w-3xl">
@@ -232,10 +235,129 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="projects" className=" scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
-          <h2 className="text-4xl font-bold">Projects</h2>
+        <section
+          id="projects"
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        >
+          {/* Section Heading */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
+              Projects
+            </p>
+
+            <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">
+              Featured Work
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-gray-400">
+              A selection of software engineering projects demonstrating full-stack
+              development, systems programming, and low-level computing.
+            </p>
+          </div>
+
+          {/* Projects Grid */}
+          <div className="mt-16 space-y-8">
+
+            {/* Portfolio Website */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">
+                Developer Portfolio Website
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+                Designed and deployed a responsive portfolio website using Next.js,
+                React, TypeScript, and Tailwind CSS to showcase projects, skills,
+                and experience.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"].map(
+                  (tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                    >
+                      {tech}
+                    </span>
+                  )
+                )}
+              </div>
+
+              <ul className="mt-6 space-y-3 text-gray-300">
+                <li>• Built reusable React components and mobile-first UI</li>
+                <li>• Implemented SEO metadata and semantic HTML structure</li>
+                <li>• Created responsive navigation with smooth scrolling</li>
+                <li>• Deployed production-ready application using Vercel</li>
+              </ul>
+            </div>
+
+            {/* Snakes and Ladders */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">
+                Snakes and Ladders Game Engine
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+                Developed a C++ game engine using linked lists to manage board state,
+                player movement, and randomized gameplay logic.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {["C++", "Linked Lists", "Game Logic", "Valgrind"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <ul className="mt-6 space-y-3 text-gray-300">
+                <li>• Implemented turn-based game mechanics and board logic</li>
+                <li>• Built snake and ladder interaction system</li>
+                <li>• Created randomized board generation system</li>
+                <li>• Achieved memory-leak-free execution verified with Valgrind</li>
+              </ul>
+            </div>
+
+            {/* Assembly Project */}
+            <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm">
+              <h3 className="text-2xl font-semibold">
+                Assembly Language String Manipulation Program
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+                Built a menu-driven x86_64 Assembly program integrated with C for
+                string manipulation, transformation, and validation.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-3">
+                {["x86_64 Assembly", "C", "Low-level Programming"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-full border border-white/10 bg-black/30 px-4 py-2 text-sm text-gray-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <ul className="mt-6 space-y-3 text-gray-300">
+                <li>• Implemented assembly subroutines for string operations</li>
+                <li>• Integrated C and Assembly code for hybrid execution</li>
+                <li>• Built menu-driven interface for user interaction</li>
+                <li>• Performed incremental testing for reliability</li>
+              </ul>
+            </div>
+
+          </div>
         </section>
-        <section id="experience" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
+
+        <section 
+          id="experience" 
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        >
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -390,7 +512,9 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="education" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        <section 
+          id="education" 
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
         >
           {/* Heading */}
           <div className="max-w-3xl">
@@ -510,7 +634,10 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="skills" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
+        <section 
+          id="skills" 
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        >
           {/* Section Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -621,7 +748,10 @@ export default function PortfolioNavbar() {
           </div>
         </section>
 
-        <section id="contact" className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16">
+        <section 
+          id="contact" 
+          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+        >
           {/* Heading */}
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
@@ -706,37 +836,37 @@ export default function PortfolioNavbar() {
           </div>
         </section>
         <footer className="border-t border-white/10 py-8">
-  <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
-    <p>© 2026 Rajan Kuwar. All rights reserved.</p>
+          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
+            <p>© 2026 Rajan Kuwar. All rights reserved.</p>
 
-    <div className="flex items-center gap-4">
-      <a
-        href="https://github.com/rajan10kuwar"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition hover:text-white"
-      >
-        GitHub
-      </a>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://github.com/rajan10kuwar"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                GitHub
+              </a>
 
-      <a
-        href="https://www.linkedin.com/in/rajan-kuwar-8356982b2"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="transition hover:text-white"
-      >
-        LinkedIn
-      </a>
+              <a
+                href="https://www.linkedin.com/in/rajan-kuwar-8356982b2"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                LinkedIn
+              </a>
 
-      <a
-        href="mailto:rajan10kuwar@gmail.com.com"
-        className="transition hover:text-white"
-      >
-        Email
-      </a>
-    </div>
-  </div>
-</footer>
-    </div>
-  );
-}
+              <a
+                href="mailto:rajan10kuwar@gmail.com.com"
+                className="transition hover:text-white"
+              >
+                Email
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    );
+  }
