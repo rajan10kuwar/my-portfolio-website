@@ -1,75 +1,83 @@
 "use client";
 
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { useState } from "react";
 
 export default function PortfolioNavbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-black text-white">
-      <header className="sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-md">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <div className="min-h-screen text-white bg-black relative">
+      <header className="sticky top-0 z-50 border-b border-white/50 bg-gray-900 backdrop-blur-xl">
+        <nav className="mx-auto grid max-w-7xl grid-cols-2 md:grid-cols-3 items-center px-4 py-4">
           {/* Logo */}
-          <a
-            href="#home"
-            className="text-xl font-bold tracking-tight text-white transition hover:opacity-80"
-            >
-              Rajan kuwar<span className="text-gray-400">.</span>
-          </a>
-
-          {/* Desktop Navigation */}
-          <div className="hidden items-center gap-8 md:flex">
+          <div className="justify-self-start">
             <a
-              href="#about"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              About
-            </a>
-            <a
-              href="#projects"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              Projects
-            </a>
-            <a
-              href="#experience"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              Experience
-            </a>
-            <a
-              href="#education"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              Education
-            </a>
-            <a
-              href="#skills"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              Skills
-            </a>
-            <a
-              href="#contact"
-              className="text-sm font-medium text-gray-300 transition hover:text-white"
-            >
-              Contact
+              href="#home"
+              className="text-xl font-bold tracking-tight transition hover:text-blue-400"
+              >
+                Rajan Kuwar<span className="text-blue-400">.</span>
             </a>
           </div>
 
-          {/* Right Side */}
-          <div className="flex items-center gap-3">
-            <a
-              href="https://github.com/rajan10kuwar "
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-white/10 px-4 py-2 text-sm font-medium text-gray-300 transition hover:border-white/20 hover:text-white"
-            >
-              GitHub
-            </a>
+          {/* Desktop Navigation */}
+          <div className="hidden justify-center md:flex">
+            <div className="flex items-center gap-6 lg:gap-12">
+              <a
+                href="#about"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                About
+              </a>
+              <a
+                href="#projects"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                Projects
+              </a>
+              <a
+                href="#experience"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                Experience
+              </a>
+              <a
+                href="#education"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                Education
+              </a>
+              <a
+                href="#skills"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                Skills
+              </a>
+              <a
+                href="#contact"
+                className="relative text-sm font-medium text-gray-300 transition hover:text-blue-400 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
 
+          {/* Right Side */}
+          <div className="justify-self-end">
+            <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
+            <a
+  href="https://github.com/rajan10kuwar"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="GitHub"
+  className="group relative flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 sm:px-4 py-2 text-sm text-gray-300 transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-500/40 hover:text-white"
+>
+  <span className="absolute inset-0 rounded-xl bg-blue-500/0 transition-all duration-300 group-hover:bg-blue-500/70" />
+  
+  <FaGithub className="relative z-10 text-xl transition-all duration-300 group-hover:rotate-12 group-hover:scale-110" />
+</a>
             <a
               href="/RK_Resume.pdf" target="_blank"
-              className="rounded-xl bg-white px-4 py-2 text-sm font-semibold text-black transition hover:opacity-90"
+              className="rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-600 hover:-translate-y-0.5"
             >
               Resume
             </a>
@@ -79,22 +87,23 @@ export default function PortfolioNavbar() {
             >
               ☰
             </button>
+            </div>
           </div>
         </nav>
         {isOpen && (
           <div className="border-t border-white/10 bg-black md:hidden">
-            <div className="flex flex-col px-6 py-4">
+            <div className="flex flex-col px-6 py-5">
               <a
                 href="#about"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 About
               </a>
               <a
                 href="#projects"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 Projects
               </a>
@@ -102,28 +111,28 @@ export default function PortfolioNavbar() {
               <a
                 href="#experience"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 Experience
               </a>
               <a
                 href="#education"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 Education
               </a>
               <a
                 href="#skills"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 Skills
               </a>
               <a
                 href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="py-3 text-gray-300 transition hover:text-white"
+                className="py-4 text-base text-gray-300 transition hover:text-white"
               >
                 Contact
               </a>
@@ -136,12 +145,13 @@ export default function PortfolioNavbar() {
       {/* Hero Section */}
       <section
         id="home"
-        className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-6 py-16"
+        className="mx-auto flex min-h-[90vh] max-w-7xl flex-col justify-center px-4 py-16"
       >
         <div className="max-w-3xl">
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.3em] text-gray-400">
-            Computer Science Graduate
-          </p>
+          
+          <p className="text-lg font-medium text-gray-300">
+  Hi there, I'm Rajan Kuwar
+</p>
 
           <h1 className="text-5xl font-bold leading-tight tracking-tight md:text-7xl">
             Full-Stack Developer Building Modern Web Applications.
@@ -156,14 +166,14 @@ export default function PortfolioNavbar() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="#projects"
-              className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition hover:opacity-90"
+              className="rounded-2xl bg-blue-500 text-white hover:bg-blue-600 px-4 py-3 text-sm font-semibold text-black transition hover:opacity-90"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="rounded-2xl border border-white/10 px-6 py-3 text-sm font-medium text-gray-300 transition hover:border-white/20 hover:text-white"
+              className="rounded-2xl border border-white/10 px-4 py-3 text-sm font-medium text-gray-300 transition hover:border-white/20 hover:text-white"
             >
               Contact Me
             </a>
@@ -191,7 +201,7 @@ export default function PortfolioNavbar() {
         
         <section 
           id="about"
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Section Heading */}
           <div className="max-w-3xl">
@@ -237,7 +247,7 @@ export default function PortfolioNavbar() {
 
         <section
           id="projects"
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Section Heading */}
           <div className="max-w-3xl">
@@ -356,7 +366,7 @@ export default function PortfolioNavbar() {
 
         <section 
           id="experience" 
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Heading */}
           <div className="max-w-3xl">
@@ -514,7 +524,7 @@ export default function PortfolioNavbar() {
 
         <section 
           id="education" 
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Heading */}
           <div className="max-w-3xl">
@@ -636,7 +646,7 @@ export default function PortfolioNavbar() {
 
         <section 
           id="skills" 
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Section Heading */}
           <div className="max-w-3xl">
@@ -750,7 +760,7 @@ export default function PortfolioNavbar() {
 
         <section 
           id="contact" 
-          className="scroll-mt-4 mx-auto max-w-7xl px-6 py-16"
+          className="scroll-mt-4 mx-auto max-w-7xl px-4 py-16"
         >
           {/* Heading */}
           <div className="max-w-3xl">
@@ -835,34 +845,50 @@ export default function PortfolioNavbar() {
             </a>
           </div>
         </section>
-        <footer className="border-t border-white/10 py-8">
-          <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 text-sm text-gray-400 md:flex-row">
-            <p>© 2026 Rajan Kuwar. All rights reserved.</p>
 
-            <div className="flex items-center gap-4">
+        <footer className="border-t border-blue-500/30 bg-white/[0.02] py-8">
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
+          <div className="mx-auto flex max-w-7xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-gray-300 transition-colors duration-300 hover:text-blue-400">
+              © 2026 Rajan Kuwar. All rights reserved.
+            </p>
+
+            <div className="flex items-center gap-5">
               <a
                 href="https://github.com/rajan10kuwar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition hover:text-white"
+                aria-label="GitHub"
+                className="group relative flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/60 hover:bg-gradient-to-br hover:from-blue-500/20 hover:to-cyan-400/20 hover:text-white hover:shadow-[0_0_25px_rgba(59,130,246,0.35)]"
               >
-                GitHub
+                <FaGithub className="relative z-10 text-xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-0.5 group-hover:rotate-6" />
+                <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-500 opacity-0 transition group-hover:opacity-100">
+                  GitHub
+                </span>
               </a>
 
               <a
-                href="https://www.linkedin.com/in/rajan-kuwar-8356982b2"
+                href="https://www.linkedin.com/in/rajan-kuwar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="transition hover:text-white"
+                aria-label="LinkedIn"
+                className="group relative flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/60 hover:bg-gradient-to-br hover:from-blue-500/20 hover:to-cyan-400/20 hover:text-white hover:shadow-[0_0_25px_rgba(59,130,246,0.35)]"
               >
-                LinkedIn
+                <FaLinkedin className="relative z-10 text-xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-0.5 group-hover:rotate-6" />
+                <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-500 opacity-0 transition group-hover:opacity-100">
+                  LinkedIn
+                </span>
               </a>
 
               <a
-                href="mailto:rajan10kuwar@gmail.com.com"
-                className="transition hover:text-white"
+                href="mailto:rajan10kuwar@gmail.com"
+                aria-label="Email"
+                className="group relative flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/60 hover:bg-gradient-to-br hover:from-blue-500/20 hover:to-cyan-400/20 hover:text-white hover:shadow-[0_0_25px_rgba(59,130,246,0.35)]"
               >
-                Email
+                <FaEnvelope className="relative z-10 text-xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-0.5 group-hover:rotate-6" />
+                <span className="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs text-gray-500 opacity-0 transition group-hover:opacity-100">
+                  Email
+                </span>
               </a>
             </div>
           </div>
